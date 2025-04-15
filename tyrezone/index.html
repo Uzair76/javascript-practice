@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Packages</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        .service-packages h1 {
+            font-size: 3rem;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-packages p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .service-packages a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .service-packages a:hover {
+            text-decoration: underline;
+        }
+        .service-package {
+            padding: 40px 0;
+        }
+
+        .nav-link {
+            border: 1px solid #e9ecef;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            padding: 15px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .nav-link.active {
+            background-color: #e4e7ea;
+            border-color: #dee2e6;
+        }
+
+        .nav-link .arrow {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .tab-caption {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .tab-caption .tab-des{
+            padding-left: 20px;
+        }
+        .tab-caption .tab-des p{
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 0px;
+        }
+        .tab-caption .tab-des strong{
+            font-size: 28px;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .thumb img {
+            max-width: 180px;
+            height: auto;
+        }
+
+        .package-content {
+            background: #e4e7ea;
+            padding: 25px;
+            border-radius: 8px;
+            height: 100%;
+        }
+
+        .pc-sumary {
+            background-color: #00BFB3;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .pc-sumary h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .pc-sumary ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pc-sumary ul li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .pc-sumary ul li:before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: white;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            border-radius: 50%;
+        }
+
+        .start-box {
+            background: #fff;
+            padding: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .start-box label {
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .start-box h3 {
+            font-size: 36px;
+            margin: 10px 0 20px;
+        }
+
+        .button-brand {
+            background: #EB3423;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            border: none;
+            width: 100%;
+            margin-bottom: 15px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button-brand:hover {
+            background: #d42d1e;
+            color: white;
+        }
+
+        .find-pitstop {
+            color: #EB3423;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .find-pitstop:hover {
+            color: #d42d1e;
+        }
+
+        .start-box h6 {
+            font-size: 14px;
+            color: #6c757d;
+            margin: 20px 0;
+        }
+
+        .start-box-bottom {
+            border-top: 1px solid #dee2e6;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logos img {
+            height: 30px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="service-packages">
+            <h1>Our Service Packages</h1>
+            <p class="description">At Pit Stop, we’ve got your vehicle servicing and car repair needs covered.</p>
+            <p>From car servicing, car repairs, warrant of fitness, brakes, exhausts and mufflers, shock absorbers and tyres, and more, you know you’ve come to the right place when you visit your local Pit Stop! We have seven ezy services for you to choose from - there’s one to suit your vehicle.</p>
+            <p>If you are unsure what ezy service is right for your vehicle, just call your local Pit Stop store on <a href="tel:0800748786">0800 748 786</a> and our store managers will be happy to advise you.</p>
+        </section>
+    </div>
+    <div class="service-package">
+        <div class="container">
+            <h3 class="mb-4">Choose Your Service Package</h3>
+            
+            <!-- Desktop View -->
+            <div class="sp-desktop">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <ul class="nav flex-column" role="tablist">
+                            <li>
+                                <div class="nav-link active" data-price="199">
+                                    <div class="tab-caption">
+                                        <div class="thumb">
+                                            <img src="assets/package-img.png" alt="Express Service">
+                                        </div>
+                                        <div class="tab-des">
+                                            <p>Starting from</p>
+                                            <strong>$199</strong>
+                                        </div>
+                                        <div class="arrow">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-link" data-price="239">
+                                    <div class="tab-caption">
+                                        <div class="thumb">
+                                            <img src="assets/two.png" alt="Express Service">
+                                        </div>
+                                        <div class="tab-des">
+                                            <p>Starting from</p>
+                                            <strong>$239</strong>
+                                        </div>
+                                        <div class="arrow">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-link" data-price="359">
+                                    <div class="tab-caption">
+                                        <div class="thumb">
+                                            <img src="assets/three.png" alt="Express Service">
+                                        </div>
+                                        <div class="tab-des">
+                                            <p>Starting from</p>
+                                            <strong>$359</strong>
+                                        </div>
+                                        <div class="arrow">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-8">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="package-content">
+                                            <div class="pc-sumary">
+                                                <h3>Service Summary</h3>
+                                                <ul>
+                                                    <li>Oil & filter change</li>
+                                                    <li>Computer & Systems Health Check</li>
+                                                    <li>25 point check</li>
+                                                    <li>Essential fluid top ups</li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            
+                                            <h3>Also included:</h3>
+                                            <ul>
+                                                <li>Top up washer, coolant, brakes, power steering & clutch fluids</li>
+                                                <li>Lubricate door hinges</li>
+                                                <li>Treat tyres</li>
+                                                <li>Road test & report</li>
+                                            </ul>
+                                            <h3>Also included:</h3>
+                                            <ul>
+                                                <li>Top up washer, coolant, brakes, power steering & clutch fluids</li>
+                                                <li>Lubricate door hinges</li>
+                                                <li>Treat tyres</li>
+                                                <li>Road test & report</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="start-box">
+                                            <label>Starting from</label>
+                                            <h3 id="dynamic-price">$199</h3>
+                                            <a href="#" class="button-brand">Book Now</a>
+                                            <h6 style="text-align: left;">Includes up to 4.5 litres of 5w30 grade oil and 1 standard oil filter.</h6>
+                                            <h6>* Pricing for all our ezy services is based on an oil quantity of between 4.5 -7 litres of high quality motor oil ranging from 10w30 to 5w30 grade fully synthetic. We have endeavoured to be as accurate as possible with our ezy service pricing to cover most vehicles, however, given the large variety of models and specifications, at times, additional charges may apply. These could include additional or specialty oil and oil filters above the RRP price allowed within the service.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script>
+
+
+    <!-- JavaScript to Update Price -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll(".nav-link");
+            const dynamicPrice = document.getElementById("dynamic-price");
+    
+            navLinks.forEach(link => {
+                link.addEventListener("click", function() {
+                    const price = this.getAttribute("data-price");
+                    dynamicPrice.textContent = `$${price}`;
+    
+                    // Remove active class from all links
+                    navLinks.forEach(link => link.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

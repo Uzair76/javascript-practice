@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:  #fff;
+    color: #333;
+}
+
+.service-packages {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+}
+
+.service-packages h1 {
+    font-size: 3em;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.service-packages .description {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.service-packages p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.service-packages a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.service-packages a:hover {
+    text-decoration: underline;
+}

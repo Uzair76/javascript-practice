@@ -16,3 +16,13 @@ let num = parseInt(str);
 console.log(typeof(num));
 
 // check even or odd 
+
+function even(n){
+    if(n%2 == 0){
+        return "even";
+    }
+    else{
+        return "odd";
+    }
+}
+console.log(even(3));

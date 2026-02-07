@@ -26,4 +26,5 @@ function even(n){
     }
 }
 console.log(even(3));
+console.log(even(4));
 
